@@ -1,6 +1,5 @@
 import sys, tempfile, os 
 from subprocess import call   
-from lockfile import LockFile
 
 class FileObj(object):
     """
@@ -20,8 +19,4 @@ class FileObj(object):
         editor = os.getenv('EDITOR', 'vi')
 
         #open up fname with vim
-        lock = LockFile(self.fname)
-        
-        lock.acquire() 
         call('%s %s' % (editor, self.fname), shell=True)
-        lock.release()  
