@@ -1,0 +1,22 @@
+The purpose of this CLI is to keep track of job applications.
+It's proprietary technology is "Searching for applied jobs."
+Indeed is best for finding jobs to apply for, but it's too slow 
+when a prospective recruiter is on the line.
+
+For those cases, you need to search for the company and job description fast - that is what this is for.
+
+Let's be honest, most software developers are in a terminal when their phone rings anyway.
+Now with a few skeystrokes, you can find the company information and job description
+through the bulk of applications you sent out - just save a few aliases for this and
+run the command anywhere: to see how, skip to the end of this document.
+
+Let's start with the tedious stuff - how to add a job and company.
+To add a company, you need to first save any information you have about the company in a file.
+     after that execute main.py with the following flags
+     -company <Company Name>
+     -company_file <path to file with a description of the company>
+     -home_page <link to the company's homepage>
+     -business_type <what kind of business it is>
+     -found <what resource you used to find the company>
+
+     If any of the information is unknown, simply add "" at the end of the flag

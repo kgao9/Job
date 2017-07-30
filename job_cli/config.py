@@ -1,1 +1,1 @@
-dbPath = '/u/k/e/kenny/private/job_dbs'
+DB_PATH = '/u/k/e/kenny/private/job_dbs'

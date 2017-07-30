@@ -20,3 +20,7 @@ class Company(DescriptionObject):
 
     def get_found(self):
         return self.found
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return self.name == other.name
